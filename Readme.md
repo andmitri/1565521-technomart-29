@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Анна Дмитриева](https://up.htmlacademy.ru/htmlcss/29/user/1565521).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Победоносцев](https://htmlacademy.ru/profile/nikkypizza).
 
 ---
 
