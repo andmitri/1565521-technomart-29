@@ -1,0 +1,84 @@
+/* Variables */
+
+:root {
+--basic-navi-blue: #32425C;
+--basic-dark-navi-blue: #293449;
+--basic-red: #EE3643;
+--basic-dark-yellow: #FFD180;
+--basic-light-red: #FF5357;
+--basic-beige: #F9F5F0;
+--basic-white: #FFFFFF;
+--basic-black: #000000;
+--basic-yellow: #FFBF47;
+--basic-blue: #3BBCE3;
+--basic-green: #63A63E;
+--basic-light-green: #8ED78F;
+--basic-purple: #DC91D8;
+}
+
+body{
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cuprum', sans-serif;
+    background-color: var(--basic-white);
+    /*background-image: url("../img/bg.jpg");*/
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .authorisation, .site-navigation {
+    list-style: none;
+  }
+
+  .header, .main-navigation{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;    
+    background-color: var(--basic-dark-navi-blue);
+  }
+
+  .header a, .main-navigation a{
+    color: var(--basic-white);
+  }
+
+  .order{
+    background-color: var(--basic-green);
+  }
+
+  .shop-description{
+    font-style: italic;
+    font-size: 16px;
+    line-height: 23px;
+    color: var(--basic-red);
+  }
+
+  .phone{
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 30px;
+    color: var(--basic-red);
+  }
+
+  .authorisation a{
+    font-size: 21px;
+    line-height: 21px;
+    color: var(--basic-black);
+  }
+
+  .header-address{
+    font-size: 14px;
+    line-height: 24px;
+    font-style: normal;
+    color: var(--basic-navi-blue);
+  }
+
