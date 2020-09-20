@@ -4,7 +4,7 @@
 --basic-navi-blue: #32425C;
 --basic-dark-navi-blue: #293449;
 --basic-red: #EE3643;
---basic-dark-yellow: #FFD180;
+--basic-light-yellow: #FFD180;
 --basic-light-red: #FF5357;
 --basic-beige: #F9F5F0;
 --basic-white: #FFFFFF;
@@ -14,6 +14,8 @@
 --basic-green: #63A63E;
 --basic-light-green: #8ED78F;
 --basic-purple: #DC91D8;
+--basic-grey: #A9A9A9;
+--basic-light-grey: #F3F7F9;
 }
 
 body{
@@ -22,7 +24,6 @@ body{
     padding: 0;
     font-family: 'Cuprum', sans-serif;
     background-color: var(--basic-white);
-    /*background-image: url("../img/bg.jpg");*/
     background-position: top center;
     background-repeat: no-repeat;
 }
@@ -36,18 +37,18 @@ a {
     height: auto;
   }
 
-  .authorisation, .site-navigation {
+ul {
     list-style: none;
   }
 
-  .header, .main-navigation{
+  .header, .site-navigation{
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;    
     background-color: var(--basic-dark-navi-blue);
   }
 
-  .header a, .main-navigation a{
+  .header a, .site-navigation a{
     color: var(--basic-white);
   }
 
@@ -82,3 +83,181 @@ a {
     color: var(--basic-navi-blue);
   }
 
+  .features-item{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--basic-white);
+  }
+
+  .feature-button{
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--basic-white);
+    text-transform: uppercase;
+    background-color: rgba(255,255,255,0.3); /* */
+  }
+
+  .label-new{
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--basic-white);
+    text-transform: uppercase;
+    background-color: var(--basic-red);
+  }
+
+  .materials{
+      background-color: var(--basic-yellow);
+  }
+
+  .tools{
+      background-color: var(--basic-blue);
+  }
+
+  .technic{
+      background-color: var(--basic-purple);
+  }
+
+  .sale{
+      background-color: var(--basic-light-green);
+  }
+
+  .delivery{
+    background-color: var(--basic-yellow);
+}
+
+.offers{
+    
+}
+
+.offer-name{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    color: var(--basic-white);
+}
+
+.offer-description{
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--basic-white);
+}
+
+.button{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+}
+
+.popular{
+    background-color: var(--basic-beige);
+}
+
+.popular h2{
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basic-navi-blue);
+}
+
+.product{
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--basic-black);
+}
+.price{
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+    color: var(--basic-white);
+}
+
+.old-price{
+    color: var(--basic-grey);
+}
+
+.services h2{
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    color: var(--basic-black);
+}
+
+.service-description{
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+    color: var(--basic-black);
+}
+
+.service-button{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 30px;
+    color: var(--basic-white);
+    background-color: var(--basic-dark-navi-blue);
+}
+
+.service-button-checked{
+    color: var(--basic-dark-navi-blue);
+    background-color: var(--basic-white);
+}
+
+.service{
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    color: var(--basic-navi-blue);
+}
+
+.tech-info h2, .contacts{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.tech-description, .contacts-description{
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+    color: var(--basic-black);
+}
+
+.companies{
+    list-style-image:none; /*я пока не использую изображение для маркера, поэтому поставила none*/
+}
+
+.company{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--basic-black);
+}
+
+.footer-features a{
+    color: var(--basic-light-yellow);
+}
+
+.footer-address, .footer-phone{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--basic-light-grey);
+
+}
