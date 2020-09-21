@@ -16,6 +16,9 @@
 --basic-purple: #DC91D8;
 --basic-grey: #A9A9A9;
 --basic-light-grey: #F3F7F9;
+
+--special-light-grey: #F1F5F7;
+--special-yellow:#FFDA96;
 }
 
 body{
@@ -41,14 +44,20 @@ ul {
     list-style: none;
   }
 
-  .header, .site-navigation{
+  .header, .navigation{
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;    
-    background-color: var(--basic-dark-navi-blue);
   }
 
-  .header a, .site-navigation a{
+  .header{
+    background-color: var(--basic-dark-navi-blue);
+  }
+  .navigation{
+    background-color: var(--basic-navi-blue);
+  }
+
+  .header a, .navigation a{
     color: var(--basic-white);
   }
 
@@ -127,7 +136,7 @@ ul {
 }
 
 .offers{
-    
+    background-color: var(--basic-grey);/*временно вместо фоновой картинки*/
 }
 
 .offer-name{
@@ -182,10 +191,15 @@ ul {
     color: var(--basic-grey);
 }
 
+.services{
+    background-color: var(--basic-light-grey);/*временно вместо фоновой картинки*/
+}
+
 .services h2{
     font-weight: normal;
     font-size: 30px;
     line-height: 30px;
+    text-transform: uppercase;
     color: var(--basic-black);
 }
 
@@ -238,7 +252,7 @@ ul {
 }
 
 .companies{
-    list-style-image:none; /*я пока не использую изображение для маркера, поэтому поставила none*/
+    list-style-image:none; /*я временно не использую изображение для маркера, поэтому поставила none*/
 }
 
 .company{
@@ -249,8 +263,16 @@ ul {
     color: var(--basic-black);
 }
 
+.footer-nav{
+    color: var(--special-light-grey);
+}
+
 .footer-features a{
     color: var(--basic-light-yellow);
+}
+
+.footer-features li:nth-child(2) a{
+    color: var(--special-yellow);/*в макете именно пункт Техника другого оттенка желтого в своем блоке*/
 }
 
 .footer-address, .footer-phone{
@@ -259,5 +281,33 @@ ul {
     font-size: 18px;
     line-height: 24px;
     color: var(--basic-light-grey);
-
 }
+
+.page-footer > div{
+    background-color: var(--basic-navi-blue);
+}
+
+.page-footer > div > div{
+    background-color: var(--basic-dark-navi-blue);
+}
+
+.footer-copyright{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.contact-mail, .footer-copyright{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-white);
+}
+
+.contact-mail a, .footer-copyright a{
+    color: var(--basic-light-yellow);
+}
+
+
