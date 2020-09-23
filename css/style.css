@@ -1,27 +1,27 @@
 /* Variables */
 
 :root {
---basic-navi-blue: #32425C;
---basic-dark-navi-blue: #293449;
---basic-red: #EE3643;
---basic-light-yellow: #FFD180;
---basic-light-red: #FF5357;
---basic-beige: #F9F5F0;
---basic-white: #FFFFFF;
---basic-black: #000000;
---basic-yellow: #FFBF47;
---basic-blue: #3BBCE3;
---basic-green: #63A63E;
---basic-light-green: #8ED78F;
---basic-purple: #DC91D8;
---basic-grey: #A9A9A9;
---basic-light-grey: #F3F7F9;
-
---special-light-grey: #F1F5F7;
---special-yellow:#FFDA96;
+    --basic-navi-blue: #32425C;
+    --basic-dark-navi-blue: #293449;
+    --basic-red: #EE3643;
+    --basic-light-yellow: #FFD180;
+    --basic-light-red: #FF5357;
+    --basic-beige: #F9F5F0;
+    --basic-white: #FFFFFF;
+    --basic-black: #000000;
+    --basic-yellow: #FFBF47;
+    --basic-blue: #3BBCE3;
+    --basic-green: #63A63E;
+    --basic-dark-green: #367315;
+    --basic-light-green: #8ED78F;
+    --basic-purple: #DC91D8;
+    --basic-grey: #A9A9A9;
+    --basic-light-grey: #F3F7F9;
+    --special-light-grey: #F1F5F7;
+    --special-yellow: #FFDA96;
 }
 
-body{
+body {
     min-width: 960px;
     margin: 0;
     padding: 0;
@@ -33,138 +33,148 @@ body{
 
 a {
     text-decoration: none;
-  }
-  
-  img {
+}
+
+img {
     max-width: 100%;
     height: auto;
-  }
+}
 
 ul {
     list-style: none;
-  }
+}
 
-  .header, .navigation{
+.header,
+.navigation {
     font-size: 18px;
     line-height: 24px;
-    font-weight: 400;    
-  }
+    font-weight: 400;
+}
 
-  .header{
+.header {
     background-color: var(--basic-dark-navi-blue);
-  }
-  .navigation{
+}
+
+.navigation {
     background-color: var(--basic-navi-blue);
-  }
+}
 
-  .header a, .navigation a{
+.header a,
+.navigation a {
     color: var(--basic-white);
-  }
+}
 
-  .order{
+.order {
     background-color: var(--basic-green);
-  }
+}
 
-  .shop-description{
+.shop-description {
     font-style: italic;
     font-size: 16px;
     line-height: 23px;
     color: var(--basic-red);
-  }
+}
 
-  .phone{
+.phone {
     font-weight: bold;
     font-size: 21px;
     line-height: 30px;
     color: var(--basic-red);
-  }
+}
 
-  .authorisation a{
+.authorisation a {
     font-size: 21px;
     line-height: 21px;
     color: var(--basic-black);
-  }
+}
 
-  .header-address{
+.header-address {
     font-size: 14px;
     line-height: 24px;
     font-style: normal;
     color: var(--basic-navi-blue);
-  }
+}
 
-  .features-item{
+.features-item {
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
     color: var(--basic-white);
-  }
+}
 
-  .feature-button{
+.feature-button {
     font-size: 14px;
     line-height: 18px;
     color: var(--basic-white);
     text-transform: uppercase;
-    background-color: rgba(255,255,255,0.3); /* */
-  }
+    background-color: rgba(255, 255, 255, 0.3);
+}
 
-  .label-new{
-    font-size: 14px;
-    line-height: 18px;
-    color: var(--basic-white);
-    text-transform: uppercase;
-    background-color: var(--basic-red);
-  }
-
-  .materials{
-      background-color: var(--basic-yellow);
-  }
-
-  .tools{
-      background-color: var(--basic-blue);
-  }
-
-  .technic{
-      background-color: var(--basic-purple);
-  }
-
-  .sale{
-      background-color: var(--basic-light-green);
-  }
-
-  .delivery{
+.materials {
     background-color: var(--basic-yellow);
 }
 
-.offers{
-    background-color: var(--basic-grey);/*временно вместо фоновой картинки*/
+.tools {
+    background-color: var(--basic-blue);
 }
 
-.offer-name{
+.technic {
+    background-color: var(--basic-purple);
+}
+
+.sale {
+    background-color: var(--basic-light-green);
+}
+
+.delivery {
+    background-color: var(--basic-yellow);
+}
+
+.offers {
+    background-color: var(--basic-grey);
+}
+
+.offer-name {
     font-weight: bold;
     font-size: 36px;
     line-height: 36px;
     color: var(--basic-white);
 }
 
-.offer-description{
+.offer-description {
     font-size: 18px;
     line-height: 24px;
     color: var(--basic-white);
 }
 
-.button{
+.button {
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
     color: var(--basic-white);
+    text-transform: uppercase;
     background-color: var(--basic-red);
 }
 
-.popular{
+.button-buy {
+    background-color: var(--basic-green);
+    box-shadow: inset 0px -3px 0px var(--basic-dark-green);
+    border-radius: 2px;
+}
+
+.button-favorites {
+    color: var(--basic-navi-blue);
+    background-color: var(--basic-white);
+    border: 3px solid var(--basic-green);
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.popular {
     background-color: var(--basic-beige);
 }
 
-.popular h2{
+.popular h2 {
     font-weight: normal;
     font-size: 30px;
     line-height: 30px;
@@ -172,7 +182,7 @@ ul {
     color: var(--basic-navi-blue);
 }
 
-.product{
+.product {
     font-family: PT Sans;
     font-style: normal;
     font-weight: bold;
@@ -180,22 +190,23 @@ ul {
     line-height: 20px;
     color: var(--basic-black);
 }
-.price{
+
+.price {
     font-weight: bold;
     font-size: 17px;
     line-height: 18px;
     color: var(--basic-white);
 }
 
-.old-price{
+.old-price {
     color: var(--basic-grey);
 }
 
-.services{
-    background-color: var(--basic-light-grey);/*временно вместо фоновой картинки*/
+.services {
+    background-color: var(--basic-light-grey);
 }
 
-.services h2{
+.services h2 {
     font-weight: normal;
     font-size: 30px;
     line-height: 30px;
@@ -203,7 +214,7 @@ ul {
     color: var(--basic-black);
 }
 
-.service-description{
+.service-description {
     font-family: PT Sans;
     font-style: normal;
     font-weight: normal;
@@ -212,7 +223,7 @@ ul {
     color: var(--basic-black);
 }
 
-.service-button{
+.service-radio-input {
     font-style: normal;
     font-weight: bold;
     font-size: 21px;
@@ -221,19 +232,21 @@ ul {
     background-color: var(--basic-dark-navi-blue);
 }
 
-.service-button-checked{
+input[type="radio"]:checked {
+    /*не работает*/
     color: var(--basic-dark-navi-blue);
     background-color: var(--basic-white);
 }
 
-.service{
+.service {
     font-weight: normal;
     font-size: 30px;
     line-height: 30px;
     color: var(--basic-navi-blue);
 }
 
-.tech-info h2, .contacts{
+.tech-info h2,
+.contacts {
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
@@ -242,7 +255,8 @@ ul {
     color: var(--basic-black);
 }
 
-.tech-description, .contacts-description{
+.tech-description,
+.contacts-description {
     font-family: PT Sans;
     font-style: normal;
     font-weight: normal;
@@ -251,11 +265,12 @@ ul {
     color: var(--basic-black);
 }
 
-.companies{
-    list-style-image:none; /*я временно не использую изображение для маркера, поэтому поставила none*/
+.companies {
+    list-style-image: none;
+    /*я временно не использую изображение для маркера, поэтому поставила none*/
 }
 
-.company{
+.company {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -263,19 +278,21 @@ ul {
     color: var(--basic-black);
 }
 
-.footer-nav{
+.footer-nav {
     color: var(--special-light-grey);
 }
 
-.footer-features a{
+.footer-features a {
     color: var(--basic-light-yellow);
 }
 
-.footer-features li:nth-child(2) a{
-    color: var(--special-yellow);/*в макете именно пункт Техника другого оттенка желтого в своем блоке*/
+.footer-features li:nth-child(2) a {
+    color: var(--special-yellow);
+    /*в макете именно пункт Техника другого оттенка желтого в своем блоке*/
 }
 
-.footer-address, .footer-phone{
+.footer-address,
+.footer-phone {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -283,22 +300,23 @@ ul {
     color: var(--basic-light-grey);
 }
 
-.page-footer > div{
+.page-footer>div {
     background-color: var(--basic-navi-blue);
 }
 
-.page-footer > div > div{
+.page-footer>div>div {
     background-color: var(--basic-dark-navi-blue);
 }
 
-.footer-copyright{
+.footer-copyright {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 18px;
 }
 
-.contact-mail, .footer-copyright{
+.contact-mail,
+.footer-copyright {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -306,8 +324,7 @@ ul {
     color: var(--basic-white);
 }
 
-.contact-mail a, .footer-copyright a{
+.contact-mail a,
+.footer-copyright a {
     color: var(--basic-light-yellow);
 }
-
-
