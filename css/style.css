@@ -223,7 +223,7 @@ ul {
     color: var(--basic-black);
 }
 
-.service-radio-input {
+.service-radio-label {
     font-style: normal;
     font-weight: bold;
     font-size: 21px;
@@ -232,8 +232,7 @@ ul {
     background-color: var(--basic-dark-navi-blue);
 }
 
-input[type="radio"]:checked {
-    /*не работает*/
+input[type="radio"]:checked+label {
     color: var(--basic-dark-navi-blue);
     background-color: var(--basic-white);
 }

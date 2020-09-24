@@ -100,14 +100,9 @@
                         <p class="price old-price"><del>32500 Р.</del></p>
                         <p class="button price"><ins>25500 Р.</ins></p>
                     </a>
-                    <form action="https://echo.htmlacademy.ru/courses" method="get">
-                        <input class="button button-buy" type="button" value="КУПИТЬ">
-                    </form>
-                    <form action="https://echo.htmlacademy.ru/courses" method="get">
-                        <input class="button button-favorites" type="button" value="В ЗАКЛАДКИ">
-                    </form>
-                    <a>КУПИТЬ</a>
-                    <a>В ЗАКЛАДКИ</a>
+
+                    <button class="button button-buy" type="button">КУПИТЬ</button>
+                    <button class="button button-favorites" type="button">В ЗАКЛАДКИ</button>
                 </li>
                 <li>
                     <a class="product" href="product.html">
@@ -116,12 +111,8 @@
                         <p class="price old-price"><del>22500 Р.</del></p>
                         <p class="button price"><ins>15500 Р.</ins></p>
                     </a>
-                    <form action="https://echo.htmlacademy.ru/courses" method="get">
-                        <input class="button button-buy" type="button" value="КУПИТЬ">
-                    </form>
-                    <form action="https://echo.htmlacademy.ru/courses" method="get">
-                        <input class="button button-favorites" type="button" value="В ЗАКЛАДКИ">
-                    </form>
+                    <button class="button button-buy" type="button">КУПИТЬ</button>
+                    <button class="button button-favorites" type="button">В ЗАКЛАДКИ</button>
                 </li>
                 <li>
                     <a class="product" href="product.html">
@@ -130,29 +121,19 @@
                         <p class="price old-price"><del>30500 Р.</del></p>
                         <p class="button price"><ins>25500 Р.</ins></p>
                     </a>
-                    <form action="https://echo.htmlacademy.ru/courses" method="get">
-                        <input class="button button-buy" type="button" value="КУПИТЬ">
-                    </form>
-                    <form action="https://echo.htmlacademy.ru/courses" method="get">
-                        <input class="button button-favorites" type="button" value="В ЗАКЛАДКИ">
-                    </form>
+                    <button class="button button-buy" type="button">КУПИТЬ</button>
+                    <button class="button button-favorites" type="button">В ЗАКЛАДКИ</button>
                 </li>
                 <li>
                     <a class="product" href="product.html">
-
                         <img src="img/product-4.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 2000">
                         <h3 class="product-name">Перфоратор BOSCH BFG 2000</h3>
                         <p class="button price">12500 Р.</p>
                     </a>
-                    <form action="https://echo.htmlacademy.ru/courses" method="get">
-                        <input class="button button-buy" type="button" value="КУПИТЬ">
-                    </form>
-                    <form action="https://echo.htmlacademy.ru/courses" method="get">
-                        <input class="button button-favorites" type="button" value="В ЗАКЛАДКИ">
-                    </form>
+                    <button class="button button-buy" type="button">КУПИТЬ</button>
+                    <button class="button button-favorites" type="button">В ЗАКЛАДКИ</button>
                 </li>
             </ul>
-
         </section>
         <section>
             <div class="popular">
@@ -205,10 +186,12 @@
         <section class="services">
             <h2>сервисы</h2>
             <p class="service-description">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-            <p><label class="service-radio-input"><input type="radio" name="service"
-            checked>Доставка</label></p>
-            <p><label class="service-radio-input"><input type="radio" name="service">Гарантия</label></p>
-            <p><label class="service-radio-input"><input type="radio" name="service">Кредит</label></p>
+            <p><input type="radio" id="delivery" name="service" checked>
+                <label class="service-radio-label" for="delivery">Доставка</label></p>
+            <p><input type="radio" id="garanty" name="service">
+                <label class="service-radio-label" for="garanty">Гарантия</label></p>
+            <p><input type="radio" id="credit" name="service">
+                <label class="service-radio-label" for="credit">Кредит</label></p>
             <ul>
                 <li>
                     <p class="service">ДОСТАВКА</p>
@@ -278,8 +261,8 @@
             </p>
             <ul>
                 <li>
-                    <a class="social-button" href="https://vk.com/" target="_blank" rel="noopener nofollow" title="Vkontakte"><span
-              class="sr-only"></span><svg width="24" height="24" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <a class="social-button" href="https://vk.com/" target="_blank" rel="noopener nofollow" title="Vkontakte"><span class="sr-only"></span><svg width="24" height="24" viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M15.83 25.176h1.63s.45-.09.723-.362c.27-.27.18-.724.18-.724s0-2.17.996-2.533c.994-.362 2.26 2.08 3.708 3.076.995.724 1.81.543 1.81.543l3.618-.09s1.9-.09.995-1.628c-.09-.09-.542-1.086-2.713-3.166-2.262-2.17-1.99-1.81.814-5.428 1.72-2.262 2.353-3.62 2.172-4.16-.18-.544-1.447-.453-1.447-.453h-4.16s-.272 0-.544.09c-.18.09-.36.453-.36.453s-.634 1.72-1.54 3.257c-1.808 3.076-2.532 3.257-2.894 3.076-.724-.452-.543-1.81-.543-2.804 0-2.985.452-4.252-.905-4.614-.452-.09-.814-.18-1.9-.18-1.447 0-2.714 0-3.438.36-.452.272-.814.725-.633.815.27 0 .905.18 1.176.633.452.543.452 1.9.452 1.9s.27 3.528-.543 3.98c-.543.27-1.357-.27-2.985-3.166-.814-1.447-1.447-3.076-1.447-3.076s.09-.27-.18-.452-.634-.27-.634-.27l-3.89.09s-.543 0-.814.27c-.18.27 0 .724 0 .724S5.608 18.483 9.045 22.1c3.166 3.258 6.785 3.077 6.785 3.077z">
               </path>
