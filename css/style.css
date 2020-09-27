@@ -112,22 +112,37 @@ ul {
 
 .materials {
     background-color: var(--basic-yellow);
+    background-image: url(../img/icon-feature-paint.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
 }
 
 .tools {
     background-color: var(--basic-blue);
+    background-image: url(../img/icon-feature-drill.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
 }
 
 .technic {
     background-color: var(--basic-purple);
+    background-image: url(../img/icon-feature-tractor.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
 }
 
 .sale {
     background-color: var(--basic-light-green);
+    background-image: url(../img/icon-feature-cart.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
 }
 
 .delivery {
     background-color: var(--basic-yellow);
+    background-image: url(../img/icon-feature-delivery.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
 }
 
 .offers {
