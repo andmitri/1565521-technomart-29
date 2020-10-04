@@ -31,6 +31,21 @@ body {
     background-repeat: no-repeat;
 }
 
+.page {
+    height: 100%;
+}
+
+.page-body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+}
+
+.main-header {
+    margin-bottom: 59px;
+}
+
 a {
     text-decoration: none;
 }
@@ -55,8 +70,20 @@ ul {
     background-color: var(--basic-dark-navi-blue);
 }
 
-.navigation {
+.main-navigation {
     background-color: var(--basic-navi-blue);
+    width: 940px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    gap: 56px;
+    margin: 0;
+    padding: 16px 53px 20px;
 }
 
 .header a,
@@ -169,6 +196,9 @@ ul {
     color: var(--basic-white);
     text-transform: uppercase;
     background-color: var(--basic-red);
+    text-align: center;
+    width: 192px;
+    height: 38px;
 }
 
 .button-buy {
@@ -186,7 +216,13 @@ ul {
 }
 
 .popular {
+    width: 940px;
+    height: 89px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--basic-beige);
+    display: grid;
+    grid-template-columns: auto fit-content(100%);
 }
 
 .popular h2 {
@@ -195,6 +231,15 @@ ul {
     line-height: 30px;
     text-transform: uppercase;
     color: var(--basic-navi-blue);
+    margin-left: 28px;
+    margin-top: 29px;
+    margin-bottom: 30px;
+}
+
+.product-button {
+    margin-right: 14px;
+    margin-top: 25px;
+    margin-bottom: 26px;
 }
 
 .product {
@@ -204,6 +249,18 @@ ul {
     font-size: 18px;
     line-height: 20px;
     color: var(--basic-black);
+    text-align: center;
+}
+
+.product-list {
+    width: 940px;
+    display: grid;
+    grid-template-columns: 220px 220px 220px 220px;
+    grid-template-rows: 318px;
+    column-gap: 20px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .price {
@@ -215,6 +272,23 @@ ul {
 
 .old-price {
     color: var(--basic-grey);
+}
+
+.producers-list {
+    width: 940px;
+    display: grid;
+    grid-template-columns: 220px 220px 220px 220px;
+    grid-template-rows: 145px;
+    gap: 20px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.producer-button {
+    margin-right: 19px;
+    margin-top: 25px;
+    margin-bottom: 26px;
 }
 
 .services {
