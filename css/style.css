@@ -43,7 +43,8 @@ body {
 }
 
 .main-header {
-    margin-bottom: 59px;
+    padding-bottom: 60px;
+    background-image: linear-gradient(var(--basic-dark-navi-blue) 42px, var(--basic-light-grey) 42px)
 }
 
 a {
@@ -67,7 +68,11 @@ ul {
 }
 
 .header {
-    background-color: var(--basic-dark-navi-blue);
+    margin: 0 auto;
+    width: 940px;
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .main-navigation {
@@ -91,8 +96,51 @@ ul {
     color: var(--basic-white);
 }
 
+.technomart-link {
+    background-color: var(--basic-red);
+    padding: 12px 0 17px 0;
+    height: 18px;
+    flex-basis: 220px;
+}
+
+.technomart-link img {
+    margin: 0 55px 0 57px;
+}
+
+.header form {
+    padding-top: 9px;
+    margin-left: 17px;
+    flex-grow: 1;
+}
+
+.bookmarks {
+    padding-top: 9px;
+    flex-basis: 106px;
+    margin-right: 50px;
+}
+
+.cart {
+    padding-top: 9px;
+    flex-basis: 98px;
+    margin-right: 26px;
+}
+
 .order {
+    line-height: 18px;
+    display: block;
     background-color: var(--basic-green);
+    padding-top: 9px;
+    height: 33px;
+    flex-basis: 150px;
+    text-align: center
+}
+
+.shop-info {
+    margin: 41px auto 0;
+    width: 940px;
+    height: 112px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .shop-description {
@@ -100,19 +148,58 @@ ul {
     font-size: 16px;
     line-height: 23px;
     color: var(--basic-red);
+    flex-basis: 197px;
+    margin-left: 30px;
+    margin-top: 0;
 }
 
-.phone {
+.contact-data {
+    flex-basis: 270px;
+}
+
+.contact-data a {
+    display: block;
+    text-align: center;
     font-weight: bold;
     font-size: 21px;
     line-height: 30px;
     color: var(--basic-red);
+    padding-top: 7px;
+    height: 30px;
+    border: 4px solid var(--basic-white);
 }
 
-.authorisation a {
+.contact-data address {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.authorisation {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.authoristion-button {
     font-size: 21px;
     line-height: 21px;
     color: var(--basic-black);
+    background-color: var(--basic-white);
+    margin: 0 5px;
+}
+
+.login-button {
+    display: block;
+    margin-top: 0;
+    padding: 12px 19px 12px 27px;
+    margin-right: 10px;
+}
+
+.registration-button {
+    display: block;
+    margin: 0;
+    padding: 12px 24px;
 }
 
 .header-address {
@@ -122,11 +209,23 @@ ul {
     color: var(--basic-navi-blue);
 }
 
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 940px;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 66px;
+}
+
 .features-item {
+    align-self: center;
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
     color: var(--basic-white);
+    flex-basis: 300px;
 }
 
 .feature-button {
@@ -163,6 +262,8 @@ ul {
     background-image: url(../img/icon-feature-cart.svg);
     background-repeat: no-repeat;
     background-position: center right;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .delivery {
@@ -170,6 +271,11 @@ ul {
     background-image: url(../img/icon-feature-delivery.svg);
     background-repeat: no-repeat;
     background-position: center right;
+}
+
+.current-offers {
+    width: 620px;
+    flex-grow: 1;
 }
 
 .offers {
@@ -197,8 +303,7 @@ ul {
     text-transform: uppercase;
     background-color: var(--basic-red);
     text-align: center;
-    width: 192px;
-    height: 38px;
+    padding: 10px 25px;
 }
 
 .button-buy {
@@ -238,8 +343,7 @@ ul {
 
 .product-button {
     margin-right: 14px;
-    margin-top: 25px;
-    margin-bottom: 26px;
+    align-self: center;
 }
 
 .product {
@@ -256,7 +360,6 @@ ul {
     width: 940px;
     display: grid;
     grid-template-columns: 220px 220px 220px 220px;
-    grid-template-rows: 318px;
     column-gap: 20px;
     padding: 0;
     margin-left: auto;
