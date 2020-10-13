@@ -44,7 +44,7 @@ body {
 
 .main-header {
     padding-bottom: 60px;
-    background-image: linear-gradient(var(--basic-dark-navi-blue) 42px, var(--basic-light-grey) 42px)
+    background-image: linear-gradient(var(--basic-dark-navi-blue) 42px, var(--basic-light-grey) 42px);
 }
 
 a {
@@ -396,6 +396,19 @@ ul {
 
 .services {
     background-color: var(--basic-light-grey);
+    padding-top: 64px;
+    padding-bottom: 99px;
+    margin-top: 70px;
+}
+
+.services-block {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-choice {
+    display: flex;
 }
 
 .services h2 {
@@ -404,6 +417,7 @@ ul {
     line-height: 30px;
     text-transform: uppercase;
     color: var(--basic-black);
+    margin-top: 0;
 }
 
 .service-description {
@@ -491,12 +505,22 @@ input[type="radio"]:checked+label {
     color: var(--basic-light-grey);
 }
 
-.page-footer>div {
-    background-color: var(--basic-navi-blue);
+.page-footer {
+    background-image: linear-gradient(var(--basic-navi-blue) 193px, var(--basic-dark-navi-blue) 107px);
 }
 
-.page-footer>div>div {
-    background-color: var(--basic-dark-navi-blue);
+.footer-container {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-container>div:nth-child(2) {
+    display: flex;
+}
+
+.footer-container>div:nth-child(2) ul {
+    display: flex;
 }
 
 .footer-copyright {
@@ -518,4 +542,12 @@ input[type="radio"]:checked+label {
 .contact-mail a,
 .footer-copyright a {
     color: var(--basic-light-yellow);
+}
+
+.map {
+    position: absolute;
+}
+
+.map-wrapper {
+    position: relative;
 }
